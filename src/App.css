@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+.contenedor-app {
+  width: 400px;
+  margin: 50px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resultados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: brown;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contenedor-contador {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 200px;
+  padding-top: 20px;
+}
+
+.contenedor-contador .contador {
+  width: 100px;
+  height: 100px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: 3rem;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.contenedor-contador p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 16px 0px;
+}
+
+.botonera-app {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.boton-app {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 100px;
+}
+
+.botonera-app div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid white;
+  border-radius: 20px;
+  width: 150px;
+  height: 250px;
+}
+
+.botonera-app div p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5px 0px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
