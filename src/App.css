@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  background-color: deepskyblue;
+  background-color: rgb(39, 173, 218);
 }
 
 .contenedor-contador {
@@ -30,10 +30,38 @@
   border: 5px solid black;
 }
 
-.contenedor-contador p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 16px 0px;
+.bandera {
+  width: 60px;
+  height: 54px;
+  margin: 15px auto;
+}
+
+#san-lorenzo {
+  display: flex;
+}
+
+#san-lorenzo div {
+  width: 12px;
+}
+
+#san-lorenzo div:nth-child(even) {
+  background-color: rgb(236, 33, 45);
+}
+
+#san-lorenzo div:nth-child(odd) {
+  background-color: rgb(39, 59, 86);
+}
+
+#boca div {
+  height: 18px;
+}
+
+#boca div:nth-child(even) {
+  background-color: rgb(243, 178, 41);
+}
+
+#boca div:nth-child(odd) {
+  background-color: rgb(16, 63, 121);
 }
 
 .botonera-app {

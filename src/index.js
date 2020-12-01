@@ -6,6 +6,7 @@ import reducer from "./reducer";
 import Counter from "./Counter";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Gabit from "./Gabit";
 
 const store = createStore(reducer);
 
@@ -14,6 +15,7 @@ ReactDOM.render(
     <Provider store={store}>
       <Counter />
     </Provider>
+    <Gabit mensaje="Hecho por Gabit" anio="2020" emoji="&#x1F47E;" />
   </React.StrictMode>,
   document.getElementById('root')
 );

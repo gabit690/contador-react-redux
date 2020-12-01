@@ -23,11 +23,21 @@ function App(props) {
       <div className="resultados">
         <div className="contenedor-contador">
           <div className="contador">{props.localCounter}</div>
-          <p>Local</p>
+          <div className="bandera" id="san-lorenzo">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
         <div className="contenedor-contador">
           <div className="contador">{props.visitorCounter}</div>
-          <p>Visitante</p>
+          <div className="bandera" id="boca">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </div>
       <div className="botonera-app">
