@@ -1,47 +1,43 @@
-import { useState } from "react";
 import "./App.css"
 
-function App() {
-
-  const [localCounter, setLocalCounter] = useState(0);
-  const [visitorCounter, setVisitorCounter] = useState(0);
+function App(props) {
 
   function incrementLocalCounter() {
-    if (localCounter < 9) setLocalCounter(localCounter+1);
+    if (props.localCounter < 10) props.incrementLocalCounter();
   }
 
   function decrementLocalCounter() {
-    if (localCounter > 0) setLocalCounter(localCounter-1);
+    if (props.localCounter > 0) props.decrementLocalCounter();
   }
 
   function incrementVisitorCounter() {
-    if (visitorCounter < 9) setVisitorCounter(visitorCounter+1);
+    if (props.visitorCounter < 10) props.incrementVisitorCounter();
   }
 
   function decrementVisitorCounter() {
-    if (visitorCounter > 0) setVisitorCounter(visitorCounter-1);
+    if (props.visitorCounter > 0) props.decrementVisitorCounter();
   }
 
   return (
     <div className="contenedor-app">
       <div className="resultados">
         <div className="contenedor-contador">
-          <div className="contador">{localCounter}</div>
+          <div className="contador">{props.localCounter}</div>
           <p>Local</p>
         </div>
         <div className="contenedor-contador">
-          <div className="contador">{visitorCounter}</div>
+          <div className="contador">{props.visitorCounter}</div>
           <p>Visitante</p>
         </div>
       </div>
       <div className="botonera-app">
         <div>
-          <p>L</p>
+          <p>Local</p>
           <button className="boton-app" onClick={incrementLocalCounter}>Aumentar</button>
           <button className="boton-app" onClick={decrementLocalCounter}>Disminuir</button>
         </div>
         <div>
-          <p>V</p>
+          <p>Visitante</p>
           <button className="boton-app" onClick={incrementVisitorCounter}>Aumentar</button>
           <button className="boton-app" onClick={decrementVisitorCounter}>Disminuir</button>
         </div>
